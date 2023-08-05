@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Head content and stylesheets here -->
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+   <!-- Navigation bar (same as before) -->
+<div class="stars">
+   
+   <header class="light">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+         <div class="container">
+            <a class="navbar-brand" href="/index.html">
+               <img src="/img_and_logo/logo2.jpg" alt="Femprish Logo">
+            </a>
+            <!-- <input type="checkbox" checked data-toggle="toggle" data-onstyle="light" id="darkSwitch"> -->
+            <label class="switch">
+               <input type="checkbox" id="darkSwitch" name="darkSwitch">
+               <span class="slider round"></span>
+            </label>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="/index.html" onclick="loadPage('index')">Home </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/initiatives.html" onclick="loadPage('initiatives')">Initiatives <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!-- Contact Form Section -->
+   <section id="contact" class="contact light">
+      <div class="container">
+         <h2>Contact Us</h2>
+         <form id="contactForm">
+            <div class="form-group">
+               <label for="name" id="forName">Name:</label>
+               <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+               <label for="email" id="forEmail">Email:</label>
+               <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+               <label for="message" id="forMsg">Message:</label>
+               <textarea id="message" name="message" class="form-control" rows="5" required placeholder="massage for up"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+         </form>
+         
+      </div>
+   </section>
+
+   <!-- Donation Information Section -->
+   <section id="donation" class="donation light">
+      <div class="container">
+         <h3>Donation Information</h3>
+         <p>A/C: will be updated soon</p>
+         <p>Petreon: will be updated soon</p>
+      </div>
+   </section>
+
+   <!-- Social Media Links Section -->
+   <section id="social" class="social light">
+      <div class="container">
+         <h3>Connect with Us</h3>
+         <div class="social-icons">
+            <div><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></div>
+            <div><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></div>
+            <div><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></div>
+            <!-- Add more social media links as needed -->
+         </div>
+      </div>
+   </section>
+</div>
+   <!-- JavaScript scripts (same as before) -->
+</body>
+<script src="contact.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="dm.js">
+   dm.js
+</script>
+
+</html>
